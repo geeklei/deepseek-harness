@@ -5,7 +5,7 @@
   "compilerOptions": {
     "target": "es2024",
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "bundler", //模块解析策略
     "declaration": true,
     "sourceMap": true,
     "declarationMap": true,
@@ -27,6 +27,7 @@
     // Source-level resolution for every repo-local graph. Project references,
     // not declaration path aliases, keep each package/vendor source compiled
     // under its own tsconfig boundary.
+    //路径别名映射（常配 @/ 指向 src/）
     "paths": {
       "@deepseek-ai/cordis": ["./vendor/cordis/src"],
       "@deepseek-ai/cosmokit": ["./vendor/cosmokit/src"],
