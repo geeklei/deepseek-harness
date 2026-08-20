@@ -3,27 +3,27 @@
   // point here). NEVER add include/files to this file: it would leak into
   // every extending package project and narrow the facade's match-all scope.
   "compilerOptions": {
-    "target": "es2024",
-    "module": "esnext",
+    "target": "es2024", //目标版本
+    "module": "esnext", //模块系统,模块系统选择（ESM 还是 CommonJS）
     "moduleResolution": "bundler", //模块解析策略
-    "declaration": true,
-    "sourceMap": true,
-    "declarationMap": true,
-    "composite": true,
-    "incremental": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowImportingTsExtensions": true,
-    "rewriteRelativeImportExtensions": true,
-    "verbatimModuleSyntax": false,
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitOverride": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "types": ["node"],
+    "declaration": true, //生成类型声明文件
+    "sourceMap": true, //生成 source map 文件
+    "declarationMap": true, //生成类型声明文件的 source map 文件
+    "composite": true, //允许在 tsconfig.json 中使用 project references
+    "incremental": true, //增量编译
+    "skipLibCheck": true, //跳过库文件的类型检查
+    "esModuleInterop": true, //允许 import foo from "module"（CJS 与 ESM 互操作）
+    "allowImportingTsExtensions": true, //允许导入 .ts 文件
+    "rewriteRelativeImportExtensions": true, //允许导入 .ts 文件
+    "verbatimModuleSyntax": false, //是否使用原生模块语法
+    "strict": true, //是否开启严格模式
+    "noUncheckedIndexedAccess": true, //是否检查未初始化的索引访问
+    "exactOptionalPropertyTypes": true, //是否检查精确的可选属性类型
+    "noImplicitOverride": true, //是否检查隐式的 override 关键字
+    "noFallthroughCasesInSwitch": true, //是否检查 switch 语句中的 fallthrough 情况
+    "noUnusedLocals": true, //是否检查未使用的局部变量
+    "noUnusedParameters": true, //是否检查未使用的参数
+    "types": ["node"], //类型定义文件
     // Source-level resolution for every repo-local graph. Project references,
     // not declaration path aliases, keep each package/vendor source compiled
     // under its own tsconfig boundary.

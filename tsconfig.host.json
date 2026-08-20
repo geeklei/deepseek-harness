@@ -7,6 +7,7 @@
     "noEmit": true,
     "rewriteRelativeImportExtensions": false
   },
+  // 包含的文件
   "include": [
     "apps/web/tests/scaffold.ts",
     "apps/web/tests/default-model.e2e.ts",

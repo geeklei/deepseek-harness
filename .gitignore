@@ -38,3 +38,99 @@ apps/web/dist/
 worktrees/
 .agents/worktrees/
 .typert-*/
+/.trae
+/.trae
+.github/
+
+
+# ============ 依赖目录 ============
+node_modules/
+jspm_packages/
+.pnp/
+.pnp.js
+.yarn/install-state.gz
+.pnpm-store/
+
+# ============ 构建产物 ============
+dist/
+build/
+out/
+release/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+.turbo/
+
+# ============ 环境变量与密钥 ============
+.env
+.env.*
+!.env.example
+!.env.local.example
+!.env.test
+!.env.production
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ============ 日志 ============
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============ 测试与覆盖率 ============
+coverage/
+.nyc_output/
+.cache/
+.temp/
+.nyc_output/
+
+# ============ 缓存 ============
+.eslintcache
+.cache/
+.temp/
+
+# ============ IDE / 编辑器 ============
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ============ 操作系统 ============
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# ============ TypeScript ============
+*.tsbuildinfo
+next-env.d.ts
+
+# ============ Next.js / Nuxt 等框架 ============
+.next/
+.nuxt/
+.nuxt-dist/
+.output/
+.vercel/
+.netlify/
+out/
+dist/
+
+# ============ 压缩包 / 其他 ============
+*.tgz
+*.tar.gz
+*.zip
+temp/
+tmp/
+
+# ============ Docker（按需） ============
+# 如使用 docker-compose 且需提交示例文件，可保留示例、忽略真实变量
+# .env.docker
+# docker-compose.override.yml
