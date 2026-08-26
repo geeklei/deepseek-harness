@@ -1,3 +1,10 @@
 - insert:
     - id: hello
       name: 'file:///E:/github.com/deepseek-harness/scratch-plugin/src/my-plugin.ts'
+    - id: greeting
+      name: 'file:///E:/github.com/deepseek-harness/scratch-plugin/src/my-plugin1.ts'
+    - id: greeting2
+      name: 'file:///E:/github.com/deepseek-harness/scratch-plugin/src/my-plugin2.ts'
+      config:
+        greeting: 'hey'
+        emoji: true
